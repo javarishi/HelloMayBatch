@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Employee {
 	// instance variable
-	int empId = 0;
-	String firstName = "Name";
-	String lastName = "LastName";
+	private int empId = 0;
+	private String firstName = "Name";
+	private String lastName = "LastName";
 	int salary ;
 	Date joiningDate;
 	String thisMayBeValidVariableName; // Camel Case
@@ -37,6 +37,11 @@ public class Employee {
 	}
 	
 	
-	
+	public String getFirstName(){
+		return firstName;
+	}
 
+	public void setFirstName(String firstName){
+		this.firstName = firstName;
+	}
 }
